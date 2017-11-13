@@ -55,6 +55,12 @@ app.get('/bad',(req,res)=>{
 	});
 });
 
+app.get('/projects',(req,res)=>{
+	res.render('projects.hbs', {
+		pageTitle: 'Projects page'
+	});
+});
+
 app.listen(port, () => {
 	console.log(`Sever running at: http://localhost:${port}`);
 });
